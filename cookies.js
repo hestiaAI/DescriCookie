@@ -28,10 +28,10 @@ async function showCookiesForTab(retour) {
   var gettingAllCookies = browser.cookies.getAll({url: tab.url});
   gettingAllCookies.then((cookies) => {
     var cookieList = document.getElementById('cookie-list');
+    var found = 0;
+    var counter = 0;
 
     if (cookies.length > 0) {
-      var found = 0;
-      var counter = 0;
       for (let cookie of cookies) {
         copie = [];
         retour.forEach(function(item) {
