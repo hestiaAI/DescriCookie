@@ -2,9 +2,21 @@
 This extensions list the cookies in the active tab and describe them with information from the [Open-Cookie-Database](https://github.com/jkwakman/Open-Cookie-Database).
 
 ## How to use
+### Manually
 1. Download the [latest release](https://github.com/hestiaAI/DescriCookie/releases/latest) of that repository.
-2. <img src="https://design.firefox.com/product-identity/firefox/firefox/firefox-logo.png" height=16px /> Firefox: ~~[Follow these instructions](https://extensionworkshop.com/documentation/publish/distribute-sideloading/#install-addon-from-file)~~ While this extension is note published, you cannot install it permanently. You will need to follow [these instructions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Your_first_WebExtension#installing) instead (cf. [#1](https://github.com/hestiaAI/DescriCookie/issues/1)).
-4. <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/2048px-Google_Chrome_icon_%28September_2014%29.svg.png" height="16px" /> Chrome: [Follow these instructions](https://www.howtogeek.com/120743/how-to-install-extensions-from-outside-the-chrome-web-store/) (needs to be tested, cf. [#4](https://github.com/hestiaAI/DescriCookie/issues/4)).
+2. <img src="./img/firefox.png" height=16px /> Firefox: While this extension is not signed and published, you cannot install it permanently (cf. [#1](https://github.com/hestiaAI/DescriCookie/issues/1)). For now:
+    1. Extract the previously downloaded ZIP.
+    2. In Firefox, open a new tab, and go to `about:debugging#/runtime/this-firefox`.
+    3. Click on "Load Temporary Add-on button".
+    4. In the previously extracted folder, select the file `manifest.json`.
+    <img src="./img/tuto1.png" height=100% />
+4. <img src="./img/chrome.png" width="16px" /> Chrome: Needs to be tested, cf. [#4](https://github.com/hestiaAI/DescriCookie/issues/4)). For now:
+    1. Extract the previously downloaded ZIP.
+    2. In Chrome, open a new tab, and go to `chrome://extensions/`.
+    3. Enable "Developer mode".
+    4. Click on "Load Unpacked".
+    5. Go in the previously extracted folder to select it.
+    <img src="./img/tuto2.png" width=100% />
 
 ## Credits
 - Cookie descriptions from [Open-Cookie-Database](https://github.com/jkwakman/Open-Cookie-Database).
